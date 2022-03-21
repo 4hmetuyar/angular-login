@@ -34,8 +34,7 @@ export class LoginComponent {
     if (this.loginForm?.invalid) {
       return;
     }
-    console.log(this.loginForm?.value, "form");
-
+ 
     this.authService
       .login(this.loginForm?.value.username, this.loginForm?.value.password)
       .subscribe(
